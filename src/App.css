@@ -1,0 +1,292 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  min-width: 0;
+  min-height: 100%;
+}
+
+body {
+  min-width: 0;
+  background-color: #0B1220;
+}
+
+img,
+video,
+canvas {
+  max-width: 100%;
+}
+
+.shipping-day {
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 4px 12px;
+}
+
+.ship-icon,
+.day-icon {
+  position: relative;
+  top: 5px;
+  font-size: 12px;
+  color: gold;
+}
+
+.shipping {
+  padding-bottom: 9px;
+  color: #F7F3EA;
+  font-family: "Merriweather", serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.brackk {
+  height: 18px;
+  border-right: 2px solid #F7F3EA;
+  position: relative;
+  top: 10px;
+  padding-right: 10px;
+}
+
+.dayy {
+  margin-left: 8px;
+  color: #F7F3EA;
+  font-family: "Merriweather", serif;
+  font-weight: 500;
+  font-size: 12px;
+  text-align: center;
+}
+
+#root .footer {
+  width: 100%;
+  height: auto;
+  min-height: 360px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px 0;
+}
+
+#root .footer > .fot-logo {
+  width: auto;
+  height: auto;
+  flex: 1 1 27%;
+  min-width: 0;
+}
+
+#root .footer > div:not(.fot-logo) {
+  width: auto;
+  height: auto;
+  flex: 1 1 16%;
+  min-width: 0;
+}
+
+#root .footer .fot-logo img {
+  width: min(300px, 100%);
+  height: auto;
+  left: 0;
+}
+
+#root .footer-tagline {
+  max-width: 100%;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+#root .footer-links li a {
+  overflow-wrap: anywhere;
+}
+
+#root .footer .footer-links li a {
+  font-size: 15px;
+}
+
+#root .footer .footer-heading {
+  font-size: 15px;
+}
+
+#root .down-footer {
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+  padding: 12px 16px;
+  text-align: center;
+}
+
+#root footer[class$="-footer"] {
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+}
+
+#root [class$="-footer-main"] {
+  max-width: 100%;
+  min-width: 0;
+}
+
+#root [class$="-footer-main"] > * {
+  min-width: 0;
+}
+
+@media (max-width: 900px) {
+  #root .footer {
+    min-height: 0;
+    padding: 28px clamp(20px, 4vw, 36px);
+    gap: 22px 16px;
+  }
+
+  #root .footer > .fot-logo {
+    flex-basis: 240px;
+  }
+
+  #root .footer > div:not(.fot-logo) {
+    flex-basis: 145px;
+  }
+
+  #root .footer .footer-links li a {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 1100px) {
+  #root .about-us {
+    position: relative;
+    height: auto;
+  }
+
+  #root .about-us-img {
+    position: relative;
+  }
+
+  #root .about-us-img img {
+    display: block;
+    height: clamp(320px, 56vw, 500px);
+    object-fit: cover;
+  }
+
+  #root .about-us .our-story-btn {
+    position: absolute;
+    top: auto;
+    bottom: 28px;
+    left: 6%;
+    width: min(200px, 48%);
+  }
+
+  #root .about-us .style-build {
+    position: absolute;
+    top: auto;
+    right: 7%;
+    bottom: 46px;
+    left: auto;
+    width: auto;
+    font-size: clamp(15px, 2vw, 20px);
+  }
+}
+
+@media (max-width: 700px) {
+  .shipping-day {
+    gap: 2px 8px;
+    padding: 4px 10px;
+  }
+
+  .ship-icon,
+  .day-icon,
+  .brackk {
+    top: 0;
+  }
+
+  .brackk {
+    height: 15px;
+    padding-right: 0;
+  }
+
+  .shipping {
+    padding-bottom: 3px;
+    font-size: 10px;
+  }
+
+  .dayy {
+    margin-left: 0;
+    font-size: 10px;
+  }
+
+  #root .footer {
+    padding: 24px clamp(16px, 4vw, 28px);
+    gap: 22px 14px;
+  }
+
+  #root .footer > .fot-logo {
+    flex: 1 1 100%;
+    padding: 0 0 18px;
+    border-right: 0;
+    border-bottom: 1px solid #26344A;
+  }
+
+  #root .footer > div:not(.fot-logo) {
+    flex: 1 1 calc(50% - 14px);
+    padding: 0;
+    border-right: 0;
+  }
+
+  #root .footer-tagline {
+    margin-left: 0;
+  }
+
+  #root .footer-icon {
+    margin: 14px 14px 0 0;
+  }
+}
+
+@media (max-width: 760px) {
+  #root .shop-promo-banner {
+    width: auto;
+    min-width: 0;
+    max-width: 100%;
+    margin-right: 4%;
+    margin-left: 4%;
+  }
+
+  #root .sales-shop-layout {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  #root .sales-product-area {
+    width: 100%;
+    min-width: 0;
+  }
+
+  #root .sales-view-all {
+    width: min(100%, 220px);
+    min-width: 0;
+    max-width: 100%;
+    margin: 28px auto 0;
+  }
+}
+
+@media (max-width: 390px) {
+  #root .footer {
+    padding: 22px 14px;
+  }
+
+  #root .footer > div:not(.fot-logo) {
+    flex-basis: 100%;
+  }
+
+  #root .footer-heading {
+    margin-bottom: 12px;
+  }
+}

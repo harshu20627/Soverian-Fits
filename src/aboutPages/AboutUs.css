@@ -1,0 +1,981 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.about-us{
+    height: 400px;
+    width: 100%;
+}
+.about-us-img img{
+    width: 100%;
+    height: 550px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-bottom: 1px solid #26344A;
+}
+.our-story-btn{
+    position: relative;
+    top: -146px;
+    left: 113px;
+    height: 44px;
+    width: 200px;
+    border: none;
+    border-radius: 4px;
+    background-color: #C8A96B;
+    font-family: "Merriweather", serif;
+    font-size: 16px;
+    font-weight: 100;
+}
+.our-story-btn:hover{
+    background-color: #26344A;
+    border: 1px solid #C8A96B;
+    color: #C8A96B;
+    transition: all 0.5s ease-in-out;
+    box-shadow: 0 0 10px #C8A96B;
+}
+.style-build{
+    color: #F7F3EA;
+    font-family: "Merriweather", serif;
+    position: relative;
+    top: -470px;
+    left: 1020px;
+    font-weight: 100;
+    font-size: 20px;
+    width: 150px;
+}
+.style-build:before{
+    content: "";
+    display: block;
+    width: 100px;
+    height: 1px;
+    background-color: #C8A96B;
+    transform: rotate(90deg);
+    position: relative;
+    top: 40px;
+    left: -60px;
+}
+.style-build:after{
+    content: "";
+    display: block;
+    width: 60px;
+    height: 1.5px;
+    background-color: #C8A96B;
+    position: relative;
+    top: 3px;
+}
+
+/* ////////////////////////////////////////////// OUR STORY ///////////////////////////////////////////// */
+.our-story{
+    height: 600px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    border-bottom: 1px solid #26344A;
+    gap: 20px;
+    background-color:#080F1C;
+}
+.story-img{
+    height: 401px;
+    width: 50%;
+    border: 1px solid #26344A;
+    position: relative;
+    top: 125px;
+    overflow: hidden;
+}
+.story-img img{
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.story-img img:hover{
+    transform: scale(1.1);
+    transition: all 0.5s linear;
+}
+.story-right{
+    height: 400px;
+    width: 50%;
+    position: relative;
+    top: 125px;
+    /* border: 1px solid #26344A;  */
+    padding-top: 20px;
+    padding-left: 20px;
+}
+.story-heading{
+    font-family: "Cinzel", serif;
+    color: #C8A96B;
+    font-weight: 500;
+}
+.story-heading:after{
+    content: "";
+    display: block;
+    width: 40px;
+    height: 1px;
+    background-color: #C8A96B;
+    position: relative;
+    left: 100px;
+    bottom: 10px;
+}
+.story-title{
+    color: #F7F3EA;
+    font-size: 35px;
+    line-height: 35px;
+    margin-bottom: 10px;
+}
+.story-journy{
+    color: #F7F3EA;
+    font-family: "Merriweather", serif;
+    font-size: 14px;
+}   
+.story-right .our-story-btn{
+    position: relative;
+    top: 20px;
+    left: 0px;
+}
+
+/* //////////////////////////////// OUR PHILOSOPHY ///////////////////////////// */
+
+.philosophy{
+    width: 100%;
+    background-color: #020d19;
+    color: #F7F3EA;
+}
+.philosophy-values{
+    min-height: 292px;
+    padding: 42px 6%;
+    display: grid;
+    grid-template-columns: 42% 58%;
+    align-items: center;
+    border-bottom: 1px solid #26344A;
+}
+.philosophy-eyebrow{
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 19px;
+    color: #C8A96B;
+    font-family: "Cinzel", serif;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+.philosophy-eyebrow::after{
+    content: "";
+    width: 60px;
+    height: 1px;
+    background-color: #C8A96B;
+}
+.philosophy-motto{
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin-bottom: 18px;
+    color: #F7F3EA;
+    font-family: "Merriweather", serif;
+    font-size: clamp(18px, 1.65vw, 29px);
+    font-weight: 500;
+    white-space: nowrap;
+}
+.motto-divider{
+    height: 25px;
+    width: 1px;
+    background-color: #59606a;
+}
+.philosophy-description,
+.philosophy-pillar p,
+.craftsmanship-description{
+    color: #d3d7de;
+    font-family: "Merriweather", serif;
+    font-size: 16px;
+    line-height: 1.55;
+}
+.philosophy-pillars{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: stretch;
+}
+.philosophy-pillar{
+    min-height: 165px;
+    padding: 0 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-left: 1px solid #26344A;
+    text-align: center;
+}
+.pillar-icon{
+    width: 48px;
+    height: 48px;
+    margin-bottom: 16px;
+    fill: none;
+    stroke: #e6b866;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 2.2;
+}
+.infinity-icon{
+    width: 60px;
+}
+.philosophy-pillar h3{
+    margin-bottom: 10px;
+    color: #F7F3EA;
+    font-family: "Merriweather", serif;
+    font-size: 17px;
+    font-weight: 500;
+}
+.philosophy-pillar p{
+    font-size: 14px;
+    line-height: 1.5;
+}
+.craftsmanship{
+    min-height: 410px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-bottom: 1px solid #26344A;
+}
+.craftsmanship-image{
+    min-height: 410px;
+    overflow: hidden;
+}
+.craftsmanship-image img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    min-height: 410px;
+    object-fit: cover;
+    object-position: center;
+}
+.craftsmanship-copy{
+    align-self: center;
+    padding: 44px 8%;
+}
+.craftsmanship-copy .philosophy-eyebrow{
+    margin-bottom: 14px;
+}
+.craftsmanship-copy h2{
+    margin-bottom: 18px;
+    color: #F7F3EA;
+    font-family: "Merriweather", serif;
+    font-size: clamp(28px, 2.1vw, 38px);
+    font-weight: 500;
+    line-height: 1.18;
+}
+.craftsmanship-description{
+    margin-bottom: 22px;
+}
+.craftsmanship-button{
+    min-height: 48px;
+    padding: 0 28px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    border: 1px solid #C8A96B;
+    border-radius: 2px;
+    background-color: #e6b866;
+    color: #17191c;
+    font-family: "Merriweather", serif;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: background-color 0.25s ease, color 0.25s ease;
+}
+.craftsmanship-button span{
+    font-size: 20px;
+    line-height: 1;
+}
+.craftsmanship-button:hover{
+    background-color: transparent;
+    color: #C8A96B;
+}
+.why-choose{
+    padding: 38px 6% 46px;
+    background-color: #020d19;
+    border-bottom: 1px solid #26344A;
+}
+.why-choose-title{
+    margin-bottom: 24px;
+    color: #C8A96B;
+    font-family: "Cinzel", serif;
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+.why-choose-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.why-choose-item{
+    min-height: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-left: 1px solid #4b4234;
+    text-align: center;
+}
+.why-choose-item:first-child{
+    border-left: 0;
+}
+.why-choose-icon{
+    width: 44px !important;
+    height: 44px !important;
+    margin-bottom: 12px;
+    color: #e6b866;
+}
+.why-choose-item h3{
+    margin-bottom: 8px;
+    color: #F7F3EA;
+    font-family: "Merriweather", serif;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.4px;
+}
+.why-choose-item p{
+    color: #d3d7de;
+    font-family: "Merriweather", serif;
+    font-size: 14px;
+}
+.about-impact{
+    min-height: 290px;
+    padding: 38px 6%;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    align-items: center;
+    gap: 24px;
+    position: relative;
+    isolation: isolate;
+    background-image: linear-gradient(90deg, rgba(2, 10, 20, 0.97) 0%, rgba(2, 10, 20, 0.84) 55%, rgba(2, 10, 20, 0.48) 100%), url('../assets/main-collection.png');
+    background-position: center;
+    background-size: cover;
+    border-bottom: 1px solid #4b4234;
+}
+.impact-intro .philosophy-eyebrow{
+    margin-bottom: 14px;
+}
+.impact-intro h2{
+    margin-bottom: 12px;
+    color: #F7F3EA;
+    font-family: "Merriweather", serif;
+    font-size: clamp(24px, 2.2vw, 36px);
+    font-weight: 500;
+    line-height: 1.18;
+}
+.impact-intro > p:last-child{
+    max-width: 430px;
+    color: #d3d7de;
+    font-family: "Merriweather", serif;
+    font-size: 14px;
+    line-height: 1.6;
+}
+.impact-stats{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.impact-stat{
+    min-height: 110px;
+    padding: 8px 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    border-left: 1px solid #4b4234;
+    text-align: center;
+}
+.impact-stat strong{
+    color: #e6b866;
+    font-family: "Merriweather", serif;
+    font-size: clamp(25px, 2.3vw, 38px);
+    font-weight: 500;
+}
+.impact-stat span{
+    color: #d3d7de;
+    font-family: "Merriweather", serif;
+    font-size: 13px;
+}
+.impact-stat .impact-stars{
+    color: #e6b866;
+    font-size: 17px;
+    letter-spacing: 2px;
+}
+.about-cta{
+    min-height: 145px;
+    padding: 24px 6%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 28px;
+    border-bottom: 1px solid #26344A;
+    background-image: linear-gradient(90deg, rgba(2, 10, 20, 0.82), rgba(2, 10, 20, 0.68)), url('../assets/shop-hero.png');
+    background-position: center;
+    background-size: cover;
+}
+.about-cta-copy .philosophy-eyebrow{
+    margin-bottom: 8px;
+    font-size: 13px;
+}
+.about-cta-copy .philosophy-eyebrow::after{
+    width: 42px;
+}
+.about-cta-copy h2{
+    margin-bottom: 6px;
+    color: #F7F3EA;
+    font-family: "Merriweather", serif;
+    font-size: clamp(20px, 1.8vw, 29px);
+    font-weight: 500;
+}
+.about-cta-copy > p:last-child{
+    color: #d3d7de;
+    font-family: "Merriweather", serif;
+    font-size: 14px;
+}
+.about-footer{
+    background-color: #020d19;
+    color: #F7F3EA;
+}
+.about-footer-main{
+    min-height: 126px;
+    padding: 18px 6%;
+    display: grid;
+    grid-template-columns: minmax(210px, 1fr) 2fr minmax(160px, 0.8fr);
+    align-items: center;
+    gap: 30px;
+    border-bottom: 1px solid #26344A;
+}
+.about-footer-brand{
+    display: inline-flex;
+    align-items: center;
+    width: fit-content;
+}
+.about-footer-brand img{
+    display: block;
+    width: 220px;
+    height: 72px;
+    object-fit: contain;
+}
+.about-footer-nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 18px 28px;
+}
+.about-footer-nav a{
+    color: #F7F3EA;
+    font-family: "Merriweather", serif;
+    font-size: 13px;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+.about-footer-nav a:hover{
+    color: #C8A96B;
+}
+.about-footer-social{
+    min-height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 20px;
+    border-left: 1px solid #4b4234;
+    padding-left: 24px;
+}
+.about-footer-social span{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #F7F3EA;
+}
+.about-footer-social svg{
+    width: 21px;
+    height: 21px;
+}
+.about-footer-x{
+    font-size: 20px;
+    line-height: 1;
+}
+.about-footer-copyright{
+    min-height: 78px;
+    padding: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #aeb5bf;
+    font-family: "Merriweather", serif;
+    font-size: 13px;
+    text-align: center;
+}
+.about-cta-button{
+    flex-shrink: 0;
+    text-decoration: none;
+}
+
+@media (max-width: 1100px){
+    .philosophy-values{
+        grid-template-columns: 1fr;
+        gap: 32px;
+        padding: 42px 6%;
+    }
+    .philosophy-motto{
+        font-size: clamp(18px, 3vw, 27px);
+    }
+    .philosophy-pillar:first-child{
+        border-left: 0;
+    }
+    .about-impact{
+        grid-template-columns: 1fr;
+        gap: 28px;
+    }
+    .impact-stats .impact-stat:first-child{
+        border-left: 0;
+    }
+}
+@media (max-width: 700px){
+    .philosophy-values{
+        padding: 34px 22px;
+    }
+    .philosophy-motto{
+        flex-wrap: wrap;
+        gap: 12px;
+        white-space: normal;
+    }
+    .motto-divider{
+        height: 20px;
+    }
+    .philosophy-description br{
+        display: none;
+    }
+    .philosophy-pillars{
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+    .philosophy-pillar{
+        min-height: 0;
+        padding: 22px 10px;
+        border-top: 1px solid #26344A;
+        border-left: 0;
+    }
+    .pillar-icon{
+        margin-bottom: 10px;
+    }
+    .craftsmanship{
+        grid-template-columns: 1fr;
+    }
+    .craftsmanship-image,
+    .craftsmanship-image img{
+        min-height: 260px;
+    }
+    .craftsmanship-copy{
+        padding: 36px 22px 44px;
+    }
+    .desktop-break{
+        display: none;
+    }
+    .why-choose{
+        padding: 32px 22px;
+    }
+    .why-choose-title{
+        text-align: center;
+        font-size: 15px;
+    }
+    .why-choose-grid{
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 22px;
+    }
+    .why-choose-item{
+        min-height: 120px;
+        padding: 10px 6px;
+    }
+    .why-choose-item:nth-child(odd){
+        border-left: 0;
+    }
+    .why-choose-item:nth-child(n + 3){
+        border-top: 1px solid #4b4234;
+        padding-top: 20px;
+    }
+    .why-choose-item h3{
+        font-size: 13px;
+    }
+    .why-choose-item p{
+        font-size: 12px;
+    }
+    .about-impact{
+        padding: 34px 22px;
+        background-position: 63% center;
+    }
+    .impact-stats{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .impact-stat:nth-child(odd){
+        border-left: 0;
+    }
+    .impact-stat:nth-child(n + 3){
+        border-top: 1px solid #4b4234;
+    }
+    .about-cta{
+        padding: 30px 22px;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    .about-cta-button{
+        width: 100%;
+    }
+    .about-footer-main{
+        grid-template-columns: 1fr;
+        justify-items: center;
+        gap: 20px;
+        padding: 26px 22px;
+    }
+    .about-footer-brand img{
+        width: 200px;
+        height: 64px;
+    }
+    .about-footer-nav{
+        gap: 16px 20px;
+    }
+    .about-footer-social{
+        min-height: 0;
+        justify-content: center;
+        border-top: 1px solid #4b4234;
+        border-left: 0;
+        padding: 18px 0 0;
+        width: 100%;
+    }
+    .about-footer-copyright{
+        min-height: 66px;
+    }
+}
+
+@media (max-width: 900px) {
+    .about-us {
+        height: auto;
+    }
+
+    .about-us-img {
+        position: relative;
+    }
+
+    .about-us-img img {
+        display: block;
+        height: clamp(320px, 56vw, 500px);
+        object-fit: cover;
+    }
+
+    .about-us .our-story-btn {
+        position: absolute;
+        top: auto;
+        bottom: 28px;
+        left: 6%;
+        width: min(200px, 48%);
+    }
+
+    .style-build {
+        position: absolute;
+        top: auto;
+        right: 7%;
+        bottom: 46px;
+        left: auto;
+        width: auto;
+        font-size: clamp(15px, 2vw, 20px);
+    }
+
+    .our-story {
+        height: auto;
+        min-height: 0;
+        padding: 42px 5%;
+        align-items: center;
+    }
+
+    .story-img {
+        top: 0;
+        width: 50%;
+        height: 340px;
+    }
+
+    .story-img img {
+        display: block;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .story-right {
+        top: 0;
+        width: 50%;
+        height: auto;
+        padding: 12px 0 12px 10px;
+    }
+
+    .story-title {
+        font-size: clamp(27px, 4vw, 35px);
+        line-height: 1.05;
+    }
+
+    .story-journy {
+        font-size: 13px;
+        line-height: 1.6;
+    }
+
+    .story-right .our-story-btn {
+        top: 18px;
+    }
+
+    .impact-stats {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .impact-stat:nth-child(odd) {
+        border-left: 0;
+    }
+
+    .impact-stat:nth-child(n + 3) {
+        border-top: 1px solid #4b4234;
+    }
+
+    .about-cta {
+        flex-wrap: wrap;
+    }
+
+    .about-footer-main {
+        grid-template-columns: minmax(0, 1fr) 2fr;
+    }
+
+    .about-footer-social {
+        grid-column: 1 / -1;
+        justify-content: center;
+        border-top: 1px solid #4b4234;
+        border-left: 0;
+        padding: 16px 0 0;
+    }
+}
+
+@media (max-width: 700px) {
+    .about-us-img img {
+        height: clamp(300px, 78vw, 420px);
+    }
+
+    .about-us .our-story-btn {
+        bottom: 20px;
+        left: 20px;
+        width: min(180px, 48%);
+        font-size: 14px;
+    }
+
+    .style-build {
+        right: 20px;
+        bottom: 24px;
+        font-size: 14px;
+    }
+
+    .style-build::before {
+        left: -42px;
+        width: 70px;
+    }
+
+    .our-story {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 32px 22px;
+        gap: 24px;
+    }
+
+    .story-img,
+    .story-right {
+        width: 100%;
+    }
+
+    .story-img {
+        height: clamp(230px, 62vw, 340px);
+    }
+
+    .story-right {
+        padding: 0;
+    }
+
+    .story-heading::after {
+        left: 90px;
+    }
+
+    .story-title {
+        font-size: clamp(28px, 7vw, 35px);
+    }
+
+    .story-journy br {
+        display: none;
+    }
+
+    .story-right .our-story-btn {
+        width: min(200px, 100%);
+        top: 18px;
+    }
+
+    .about-footer-main {
+        grid-template-columns: 1fr;
+    }
+
+    .about-footer-social {
+        grid-column: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-us-img img {
+        height: 300px;
+    }
+
+    .about-us .our-story-btn {
+        left: 16px;
+        bottom: 16px;
+        width: 152px;
+        height: 40px;
+        font-size: 12px;
+    }
+
+    .style-build {
+        right: 14px;
+        bottom: 18px;
+        font-size: 12px;
+    }
+
+    .style-build::before {
+        display: none;
+    }
+
+    .style-build::after {
+        width: 42px;
+    }
+
+    .our-story {
+        padding: 28px 16px;
+    }
+
+    .story-img {
+        height: 230px;
+    }
+
+    .story-title {
+        font-size: 28px;
+    }
+
+    .philosophy-values {
+        padding: 30px 16px;
+    }
+
+    .philosophy-eyebrow {
+        gap: 9px;
+        font-size: 13px;
+        letter-spacing: 1.5px;
+    }
+
+    .philosophy-eyebrow::after {
+        width: 38px;
+    }
+
+    .philosophy-motto {
+        gap: 8px;
+        font-size: 17px;
+    }
+
+    .motto-divider {
+        height: 16px;
+    }
+
+    .philosophy-description,
+    .craftsmanship-description {
+        font-size: 14px;
+    }
+
+    .craftsmanship-image,
+    .craftsmanship-image img {
+        min-height: 220px;
+    }
+
+    .craftsmanship-copy {
+        padding: 30px 16px 36px;
+    }
+
+    .craftsmanship-copy h2 {
+        font-size: 26px;
+    }
+
+    .craftsmanship-button {
+        width: 100%;
+        padding: 0 12px;
+        font-size: 12px;
+        letter-spacing: 0.6px;
+    }
+
+    .why-choose {
+        padding-right: 16px;
+        padding-left: 16px;
+    }
+
+    .why-choose-item h3 {
+        font-size: 12px;
+    }
+
+    .why-choose-item p {
+        font-size: 11px;
+    }
+
+    .about-impact {
+        padding: 30px 16px;
+    }
+
+    .impact-stat {
+        padding: 8px 6px;
+    }
+
+    .impact-stat span {
+        font-size: 11px;
+    }
+
+    .about-cta {
+        padding: 28px 16px;
+    }
+
+    .about-cta-copy h2 {
+        font-size: 21px;
+    }
+
+    .about-cta-copy > p:last-child {
+        font-size: 13px;
+    }
+
+    .about-footer-main {
+        padding-right: 16px;
+        padding-left: 16px;
+    }
+
+    .about-footer-nav {
+        gap: 14px 16px;
+    }
+}
+
+@media (max-width: 390px) {
+    .about-us-img img {
+        height: 280px;
+    }
+
+    .story-title {
+        font-size: 26px;
+    }
+
+    .philosophy-motto {
+        font-size: 15px;
+    }
+
+    .impact-stat strong {
+        font-size: 24px;
+    }
+
+    .about-footer-copyright {
+        padding: 18px 14px;
+        font-size: 11px;
+    }
+}
